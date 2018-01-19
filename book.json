@@ -1,0 +1,54 @@
+{
+  "title": "Foosux",
+  "description": "Foosux的笔记",
+  "language": "zh",
+  "root": "lib",
+  "styles": {
+    "website": "styles/website.css"
+  },
+  "plugins": [
+    "-sharing",
+    "expandable-chapters-small",
+    "book-summary-scroll-position-saver",
+    "-lunr",
+    "-search",
+    "search-plus",
+    "prism",
+    "-highlight",
+    "splitter",
+    "tbfed-pagefooter",
+    "back-to-top-button",
+    "atoc",
+    "favicon",
+    "donate",
+    "klipse"
+  ],
+  "pluginsConfig": {
+    "prism": {
+      "css": [
+        "prismjs/themes/prism-okaidia.css"
+      ]
+    },
+    "tbfed-pagefooter": {
+      "copyright":"Copyright &copy Foosux",
+      "modify_label": "更新时间：",
+      "modify_format": ""
+    },
+    "atoc": {
+      "addClass": true,
+      "className": "atoc"
+    },
+    "favicon": {
+      "shortcut": "favicon.ico",
+      "bookmark": "favicon.ico"
+    },
+    "donate": {
+      "wechat": "images/wechatpay.jpg",
+      "alipay": "images/alipay.jpg",
+      "title": "",
+      "button": "打赏",
+      "alipayText": "支付宝打赏",
+      "wechatText": "微信打赏"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "books",
+  "version": "1.0.0",
+  "description": "foosux's book!",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "gitbook-plugin-atoc": "^1.0.3",
+    "gitbook-plugin-back-to-top-button": "^0.1.4",
+    "gitbook-plugin-book-summary-scroll-position-saver": "^0.0.7",
+    "gitbook-plugin-donate": "^1.0.2",
+    "gitbook-plugin-expandable-chapters-small": "^0.1.7",
+    "gitbook-plugin-favicon": "^0.0.2",
+    "gitbook-plugin-klipse": "^1.2.0",
+    "gitbook-plugin-prism": "^2.3.0",
+    "gitbook-plugin-search-plus": "^1.0.3",
+    "gitbook-plugin-splitter": "^0.0.8",
+    "gitbook-plugin-tbfed-pagefooter": "^0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "gitbook serve --port 5858",
+    "build": "gitbook build",
+    "public": "sh public.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Foosux/books.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Foosux/books/issues"
+  },
+  "homepage": "https://github.com/Foosux/books#readme"
+}

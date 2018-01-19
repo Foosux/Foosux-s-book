@@ -1,0 +1,32 @@
+/* 链接增加图标 */
+.markdown-section a::after {
+    display: inline-block;
+    position: relative;
+    content: " ";
+    font-size: inherit;
+    width: 0.5em;
+    height: 0.5em;
+    margin-left: 3px;
+    vertical-align: text-top;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTAwNzE4ODQxMTU4IiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjQwMTMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTc1MS42MTYgODgxLjE1MmwtNjA3LjIzMiAwTDE0NC4zODQgMjc0LjQzMmwzOTIuMTkyIDAgMC04Ni41MjgtNDc5LjIzMiAwTDU3LjM0NCA5NjguMTkybDc4MC4yODggMCAwLTQ3NC42MjQtODYuNTI4IDBMNzUxLjEwNCA4ODEuMTUyek02MjEuNTY4IDU3LjM0NGwwLjUxMiA5MC42MjQgMTk4LjE0NC0yLjA0OC00NTguNzUyIDQ1OC43NTIgNjEuNDQgNjEuNDQgNDU5Ljc3Ni00NTkuNzc2IDAuNTEyIDE5OC4xNDQgODUuNTA0IDAgMC0zNDYuNjI0TDYyMS41NjggNTcuODU2eiIgcC1pZD0iNDAxNCIgZmlsbD0iIzEyOTZkYiI+PC9wYXRoPjwvc3ZnPg==);
+    background-size: 100%;
+}
+/* toc补丁 */
+.markdown-section .atoc {
+  max-height: 90%;
+  overflow-y: scroll;
+}
+/* 隐藏多余信息 */
+.gitbook-link[href='https://www.gitbook.com'] {
+  display: none!important;
+  margin-bottom: 50px;
+}
+/* 打赏 */
+#QR { display:flex!important; box-sizing: border-box; }
+#QR > div { display:block!important; flex:1; }
+#wechat:hover p,
+#alipay:hover p {animation: none;}
+#rewardButton span { border-radius: 5px!important; }
+#QR a img { margin: .8em 0; }
+/* 版权信息 */
+.copyright {font-size:0;}
