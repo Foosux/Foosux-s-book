@@ -9,5 +9,5 @@ time=$(( $end - $start ))
 echo "fe build in ($time) 秒"
 
 echo "开始推送代码"
-scp -r ./_book/* root@10.33.106.182:/root/gitbook/_book
+scp -r ./_book/* root@45.76.74.123:/root/mybook
 echo "推送完毕！"
