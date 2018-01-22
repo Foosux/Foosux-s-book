@@ -35,4 +35,10 @@
 /* 版权信息 */
 .copyright {font-size:0;}
 /* 侧栏补丁 */
-.book-summary { width: 145px; }
+@media (min-width: 600px) {
+  .book-summary { width: 150px; }
+}
+/* 固定顶栏 */
+.book-header {
+  position: fixed;
+}
