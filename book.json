@@ -20,8 +20,8 @@
     "back-to-top-button",
     "atoc",
     "favicon",
-    "donate",
-    "klipse"
+    "klipse",
+    "donate"
   ],
   "pluginsConfig": {
     "prism": {

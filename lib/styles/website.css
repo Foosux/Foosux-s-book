@@ -22,7 +22,11 @@
   margin-bottom: 50px;
 }
 /* 打赏 */
-#QR { display:flex!important; box-sizing: border-box; }
+.gitbook-donate {display: none!important;}
+#QR {
+  display:flex!important;
+  box-sizing: border-box;
+}
 #QR > div { display:block!important; flex:1; }
 #wechat:hover p,
 #alipay:hover p {animation: none;}
@@ -30,3 +34,5 @@
 #QR a img { margin: .8em 0; }
 /* 版权信息 */
 .copyright {font-size:0;}
+/* 侧栏补丁 */
+.book-summary { width: 145px; }
