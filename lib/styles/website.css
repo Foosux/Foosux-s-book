@@ -37,8 +37,16 @@
 /* 侧栏补丁 */
 @media (min-width: 600px) {
   .book-summary { width: 150px; }
+  .book.with-summary .book-body {
+    left:150px;
+  }
 }
 /* 固定顶栏 */
+.book-body {
+  padding-top: 50px;
+}
 .book-header {
   position: fixed;
+  top: 0;
+  width: 100%;
 }

@@ -20,7 +20,6 @@
     "back-to-top-button",
     "atoc",
     "favicon",
-    "klipse",
     "donate"
   ],
   "pluginsConfig": {
@@ -39,8 +38,8 @@
       "className": "atoc"
     },
     "favicon": {
-      "shortcut": "favicon.ico",
-      "bookmark": "favicon.ico"
+      "shortcut": "/favicon.ico",
+      "bookmark": "/favicon.ico"
     },
     "donate": {
       "wechat": "/images/wechatpay.jpg",
