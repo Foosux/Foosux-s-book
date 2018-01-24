@@ -68,10 +68,11 @@ vim ~/.npmrc		// 打开配置文件
 registry=https://registry.npm.taobao.org		// 写入配置并保存退出
 ```
 
-- 几个常用的源
-	+ 默认源 `http://registry.npmjs.org`
-	+ 淘宝https源 `https://registry.npm.taobao.org`
-	+ 淘宝http 源 `http://registry.npm.taobao.org`
+几个常用的源
+
+- 默认源 `http://registry.npmjs.org`
+- 淘宝https源 `https://registry.npm.taobao.org`
+- 淘宝http 源 `http://registry.npm.taobao.org`
 
 ## npm包管理
 
