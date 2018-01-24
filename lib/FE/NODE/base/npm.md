@@ -2,6 +2,8 @@
 
 > npm是`node`的包管理工具，也是前端模块化的一个标志性产物。   
 
+> 本文中提及的`包`和`模块`是同一概念。
+
 <!-- toc -->
 
 ## npm管理
@@ -19,10 +21,10 @@ npm -v
 npm --version
 
 //查看项目中模块所在的目录
- npm root
+npm root
 
- //查看全局安装的模块所在目录
- npm root -g
+//查看全局安装的模块所在目录
+npm root -g
 ```
 
 ### 2 卸载
@@ -35,7 +37,7 @@ sudo npm uninstall npm -g
 
 ### 3 升级
 
-在执行某些命令时，有时会提示需要更高版本的npm，可通过命令升级。
+在执行某些命令时，会提示需要更高版本的npm，可通过命令升级。
 
 ```js
 npm install -g npm
@@ -59,9 +61,9 @@ npm config set registry https://registry.npm.taobao.org
 
 ```js
 // 通过npm指令指定源（单次生效）
-npm --registry https://registry.npm.taobao.org 模块名
+npm install 模块名 --registry https://registry.npm.taobao.org
 
-// 在系统配置文件 ~/.npmrc 文件中写入源地址（永久生效，推荐使用）
+// 在系统配置文件 ~/.npmrc 中写入源地址（永久生效，推荐使用）
 vim ~/.npmrc		// 打开配置文件
 registry=https://registry.npm.taobao.org		// 写入配置并保存退出
 ```
@@ -76,7 +78,7 @@ registry=https://registry.npm.taobao.org		// 写入配置并保存退出
 ### 1 安装包
 
 ```js
-// 全局安装某模块
+// 全局安装
 npm install -g 模块名
 
 // 本地安装，作为生产环境依赖，计入 package.json - dependencies
@@ -98,7 +100,7 @@ npm install
 
 > 使用全局安装：依赖包会下载到系统特定目录，可以在所有目录中使用。
 
-- 如何选择适合的方式安装依赖包？
+- 如何选择适当的方式安装依赖包？
 
 > 拉取项目代码时，通常使用 `npm install` 根据 package.json 中的记录，一次安装所有项目依赖包。
 
@@ -144,7 +146,7 @@ npm list --depth 0
 npm list 模块名 version
 ```
 
-> `--depth 0` 是可选参数，表示遍历包依赖的层级，数值的部分可修改。
+> `--depth 0` 是可选参数，表示遍历深度，数值的部分可修改。
 
 - 更新已安装的包（会受 package.json 中限定的版本号影响）
 
