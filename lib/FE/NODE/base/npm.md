@@ -236,7 +236,7 @@ npm unpublish 包名 --force
 
 - package.json中的版本号含义
 
-![](https://ws3.sinaimg.cn/large/006tKfTcly1fnrrcvqxltj309g02p74f.jpg)
+![](https://ws2.sinaimg.cn/large/006tKfTcly1fnrsrci4xvj308o02qaa5.jpg)
 
 > `~` 限定模块的次要版本。例如： `~1.2.3 `=> 匹配`1.2.x`，不包括1.3.0  
 

@@ -28,6 +28,8 @@
         * [案例](./FE/NODE/plan/README.md)
         * [思考](./FE/NODE/think/README.md)
         * [问题集](./FE/NODE/error/README.md)
+          * [ls-remote显示NA](./FE/NODE/error/nvm_ls-remote_显示NA.md)
+          * [curl证书问题](./FE/NODE/error/curl证书问题.md)
     * [React](./FE/React/README.md)
         * [基础](./FE/React/base/README.md)
         * [进阶](./FE/React/up/README.md)
