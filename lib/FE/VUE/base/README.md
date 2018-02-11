@@ -56,9 +56,17 @@ var vm = new Vue({
     reverseMessage: function () {
       ...
     }
-  }
+  },
   // 生命周期钩子
   created: function () {
+    ...
+  },
+  // 侦听器
+  watch: {
+    ...
+  },
+  // 侦听属性
+  computed: {
     ...
   }
 })
