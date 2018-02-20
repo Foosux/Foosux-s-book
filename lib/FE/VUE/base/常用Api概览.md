@@ -159,16 +159,24 @@ var app3 = new Vue({
 
 ### v-for
 
-绑定DOM，控制循环输出
+绑定DOM，控制循环输出列表类结构。
+
+- 实例: 使用数组数据
 
 ```vue
 <div id="app-4">
   <ol>
+    <!-- 亦可用 of 代替 in -->
     <li v-for="todo in todos">
       {{ todo.text }}
     </li>
   </ol>
 </div>
+
+<!-- 使用第二个参数，作为索引 -->
+<li v-for="(item, index) in items">
+  {{ index }} - {{ item.message }}
+</li>
 ```
 
 ```js
@@ -183,6 +191,49 @@ var app4 = new Vue({
   }
 })
 ```
+
+- 另一个实例：使用单个对象作为数据
+
+```vue
+<li v-for="value in object">
+  {{ value }}
+</li>
+
+<!-- 使用第二个参数 -->
+<li v-for="(value, key) in object">
+  {{ key }}: {{ value }}
+</li>
+
+<!-- 使用第三个参数，作为索引 -->
+<li v-for="(value, key, index) in object">
+  {{ index }}. {{ key }}: {{ value }}
+</li>
+```
+
+```js
+var app = new Vue({
+  el: '#app',
+  data: {
+    object: {
+      firstName: 'John',
+      lastName: 'Doe',
+      age: 30
+    }
+  }
+})
+```
+
+- 一段取值范围
+
+```vue
+<span v-for="n in 10">{{ n }}</span>
+```
+
+> 建议尽可能在使用 v-for 时提供 `key`，除非遍历输出的 DOM 内容非常简单，或者是刻意依赖默认行为以获取性能上的提升。
+
+> 当它们处于同一节点，v-for 的优先级比 v-if 更高，这意味着 v-if 将分别重复运行于每个 v-for 循环中。   
+
+> 2.2.0+ 的版本里，当在组件中使用 v-for 时，key 现在是必须的。
 
 ### v-on
 
@@ -264,6 +315,17 @@ var app6 = new Vue({
 ### $el
 
 ### $watch
+
+### $set
+
+全局 `Vue.set` 的别名，作用一致
+
+```vue
+Vue.set(vm.xx, 'age', 27)
+
+vm.$set(vm.xx, 'age', 27)
+```
+
 
 ## 3 修饰符
 

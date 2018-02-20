@@ -44,6 +44,7 @@
           * [组件](./FE/VUE/base/组件.md)
           * [生命周期](./FE/VUE/base/生命周期.md)
           * [模板语法](./FE/VUE/base/模板语法.md)
+          * [监听事件](./FE/VUE/base/监听事件.md)
         * [进阶](./FE/VUE/up/README.md)
         * [案例](./FE/VUE/plan/README.md)
         * [思考](./FE/VUE/think/README.md)
