@@ -85,6 +85,17 @@ data: {
 }
 ```
 
+- 组件中把一个对象的所有属性当成props进行传递。（不带参数）
+
+```html
+todo: {
+  text: 'Learn Vue',
+  isComplete: false
+}
+
+<todo-item v-bind="todo"></todo-item>
+```
+
 ### v-if
 
 - 数据绑定DOM，控制显示隐藏
@@ -235,7 +246,7 @@ var app = new Vue({
 
 > 2.2.0+ 的版本里，当在组件中使用 v-for 时，key 现在是必须的。
 
-### v-on
+### v-on:
 
 用来为用户交互绑定事件
 
@@ -326,6 +337,13 @@ Vue.set(vm.xx, 'age', 27)
 vm.$set(vm.xx, 'age', 27)
 ```
 
+### $on(eventName)
+
+为实例监听事件
+
+### $emit(eventName)
+
+为实例触发事件
 
 ## 3 修饰符
 
