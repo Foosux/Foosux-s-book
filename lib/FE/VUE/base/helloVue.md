@@ -119,7 +119,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   /* 使用sass作为预编译语言 */
   ...
 </style>
