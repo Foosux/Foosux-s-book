@@ -78,6 +78,7 @@
 * [方法论](./mothod/README.md)
 * [读书笔记](./read/README.md)
     * [别让猴子跳回背上](./read/别让猴子跳回背上.md)
+    * [超级合作者](./read/超级合作者.md)
 * [兴趣](./interest/README.md)
     * [旅行摄影](./interest/photo/README.md)
     * [音乐](./interest/music/README.md)
