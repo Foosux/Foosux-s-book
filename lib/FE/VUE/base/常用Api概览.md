@@ -8,7 +8,9 @@
 
 ### v-bind
 
-- 数据绑定属性
+- 数据绑定到属性
+
+> 双括号的数据绑定形式不能作用于属性，所以有了 v-bind
 
 ```vue
 <div id="app">
@@ -29,15 +31,22 @@ var app = new Vue({
 
 - 简写形式 `:`
 
+> v-bind经常使用，所以有了简写的语法糖 `:`
+
 ```html
 <span :title="message"></div>
 ```
 
 - 绑定 `class` 或 `style` 增强
 
+> 绑定class和style的逻辑可能会相对复杂，所以有了特殊的`对象语法`、`数组语法`来方便理解和维护。
+
+`对象语法`
+
 ```vue
-<div class="static"
-     v-bind:class="{ 'active': isActive, 'text-danger': hasError }">
+<div
+  class="static"
+  :class="{ 'active': isActive, 'text-danger': hasError }">
 </div>
 ```
 
@@ -47,10 +56,31 @@ var app = new Vue({
 <div class="static active text-danger"></div>
 ```
 
-更灵活的应用，使用计算值：
+`数组语法`
 
 ```vue
-<div v-bind:class="classObject"></div>
+<div :class="[activeClass, errorClass]"></div>
+
+<div :class="[isActive ? activeClass : '', errorClass]"></div>
+
+<div :class="[{ active: isActive }, errorClass]"></div>
+```
+
+```js
+data: {
+  activeClass: 'active',
+  errorClass: 'text-danger'
+}
+```
+
+> 注意：数组语法中可以嵌套使用对象语法，如：
+
+> :class="[{ active: isActive }, errorClass]"
+
+- 如果逻辑进一步复杂，建议使用计算值：
+
+```vue
+<div :class="classObject"></div>
 ```
 
 ```js
@@ -68,24 +98,9 @@ computed: {
 }
 ```
 
-使用数组，多种用法:
-
-```vue
-<div v-bind:class="[activeClass, errorClass]"></div>
-
-<div v-bind:class="[isActive ? activeClass : '', errorClass]"></div>
-
-<div v-bind:class="[{ active: isActive }, errorClass]"></div>
-```
-
-```js
-data: {
-  activeClass: 'active',
-  errorClass: 'text-danger'
-}
-```
-
 - 组件中把一个对象的所有属性当成props进行传递。（不带参数）
+
+> 直接绑定属性仅作用于组件的根元素，已经存在的类不会被覆盖。
 
 ```html
 todo: {
@@ -94,6 +109,14 @@ todo: {
 }
 
 <todo-item v-bind="todo"></todo-item>
+```
+
+- 2.3.0 以后style绑定可以使用`多重值`，常用于提供多个带前缀的值。
+
+> 通常使用`:style`时，Vue.js 会自动侦测并添加相应的前缀
+
+```vue
+<div :style="{ display: ['-webkit-box', '-ms-flexbox', 'flex'] }"></div>
 ```
 
 ### v-if
@@ -319,7 +342,7 @@ var app6 = new Vue({
 
 ## 2 实例属性和方法
 
-> 带有前缀 `$`
+> 带有前缀 `$`，通常在组件挂在后，才能使用实例方法和属性。
 
 ### $data
 
