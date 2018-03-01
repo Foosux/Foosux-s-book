@@ -83,7 +83,9 @@ var vm = new Vue({
 
 ## 2 实战进阶Demo
 
-推荐使用 `webpack + vue-loader` 的`单文件组件`格式。单个模块放在一个JS里，包含 `<template>` `<script>` `<style>` 三部分。
+推荐使用 `webpack + vue-loader` 的`单文件组件`格式。单个模块放在一个`.vue文件`里，包含 `<template>` `<script>` `<style>` 三部分。
+
+> `.vue文件` 是用户用 HTML-like 的语法编写的 Vue 组件。
 
 ```vue
 <template>
