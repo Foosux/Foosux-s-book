@@ -3,7 +3,13 @@
 ## 作用及规则
 在git中如果想忽略掉某个文件，不让这个文件提交到版本库中，可以使用修改根目录中 .gitignore 文件的方法（如无，则需自己手工建立此文件）。这个文件每一行保存了一个匹配的规则例如：
 
-![](https://mmbiz.qpic.cn/mmbiz_png/jBonsibgwy67icjkicdOo8fQWaykHBjbaBRicX1FpAdZt5WAR3Jmag88saPQonLOEGTv5Ikl0G7edpnEploWvtiaicxQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
+```bash
+*.a         # 忽略有所 .a 结尾的文件
+!lib.a      # lib.a 除外
+/TODO       # 仅忽略项目根目录下的 TODO 下的文件，不包含 super/TODO
+build/      # 忽略 build/ 下所有文件
+doc/*.txt   # 忽略 doc/test.txt 但不包括 doc/serv/test.txt
+```
 
 ## 问题及解决方法
 
