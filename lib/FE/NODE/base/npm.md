@@ -85,7 +85,10 @@ registry=https://registry.npm.taobao.org		// 写入配置并保存退出
 npm install -g 模块名
 
 // 本地安装，作为生产环境依赖，计入 package.json - dependencies
+// npm 5.x 版本后不需要 --save，会自动计入 package.json
 npm install --save 模块名
+// npm 5.x 版本后不想计入 package.json 使用 --no-save
+npm install --no-save 模块名
 
 // 本地安装，作为开发环境依赖，计入 package.json - devDependencies
 npm install --save-dev 模块名
@@ -128,7 +131,10 @@ npm uninstall -g 模块名
 npm uninstall 模块名
 
 // 删除生产环境依赖并更新 package.json
+// npm 5.x 版本后不需要 --save
 npm uninstall --save 模块名
+// npm 5.x 版本后不想计入 package.json 使用 --no-save
+npm uninstall --no-save
 
 // 删除开发环境依赖并更新 package.json
 npm uninstall --save-dev 模块名
@@ -145,8 +151,10 @@ npm list -g --depth 0
 // 查看本地已安装的包
 npm list --depth 0
 
-// 查看某个包的版本
-npm list 模块名 version
+// 查看某个包的所有版本
+npm view 模块名 versions
+// 查看某个包最新的版本
+npm view 模块名 version
 ```
 
 > `--depth 0` 是可选参数，表示遍历深度，数值的部分可修改。
@@ -154,8 +162,14 @@ npm list 模块名 version
 - 更新已安装的包（会受 package.json 中限定的版本号影响）
 
 ```js
+// 查看是否有更新
+npm outdated
+
+// 更新包
 npm update 模块名
 ```
+
+> `update`依赖 package.json 中的版本规则，不会自动更新到最新，也不能通过 `@x.y.z` 来指定想要更新到的版本。此类需求请使用 `npm i xx@x.y.z` 重新安装。
 
 - 清除未被使用到的包
 
@@ -256,3 +270,22 @@ yarn是一个与npm兼容的node包管理器，使用它安装npm包，会自动
 ## package.json
 
 在我们讨论过程中涉及了 `package.json` 的部分字段，详细介绍可参考另一篇文章。
+
+## package-lock.json
+
+Node升级到 v8.0 后，自带 NPM 也升级到 5.0，由此带来一些改变:
+
+- 使用`npm install xxx`命令安装模块时，不再需要`--save`选项，会自动将模块依赖信息保存到 `package.json` 文件；
+- `安装模块操作`（改变 node_modules 文件夹内容）会生成或更新 `package-lock.json` 文件
+- 发布的模块不会包含 `package-lock.json` 文件
+- 如果手动修改了 `package.json` 文件中已有模块的版本，直接执行`npm install`不会安装新指定的版本，只能通过`npm install xxx@yy`更新
+
+> 版本更新后，安装包的速度会更快，同时也要注意避免上面的坑。
+
+**总结**
+
+仅依赖 package.json，通常无法精准锁定小版本（安装时默认是 ^, 锁定大版本），这样不能保证所有人都是用完全相同的依赖环境，若依赖的模块未按标准做好兼容，则可能出现异常。
+
+npm v5中新增了`package-lock.json`，其目的是确保在所有主机上安装同样的依赖库。无论是在`node_modules目录`或`package.json文件`修改依赖树(手动删除、修改无效)，都会自动记录下来。
+
+对比之下，大概是想做类似 Yarn 的功能。

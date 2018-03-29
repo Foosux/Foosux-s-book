@@ -5,7 +5,7 @@ command line interface 命令行界面
 isomorphism，数学领域专业术语。泛指将某一事物建立映射关系，运用到不同的领域。在前端领域多指使用同一技术栈进行前后端编码。
 
 ## HMR
-热更新。
+开发过程中的热更新。
 
 ## SPA
 Single Page Application 单页应用
@@ -18,3 +18,6 @@ Multipurpose Internet Mail Extensions 多功能Internet 邮件扩充服务。它
 
 ## XHR
 XMLHttpRequest对象，传统的Ajax实现的关键。
+
+## FRP
+Functional Reactive Programming，函数响应式编程。

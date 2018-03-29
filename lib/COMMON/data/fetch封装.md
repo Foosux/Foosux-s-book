@@ -59,9 +59,9 @@ export default function ({url, params={}, method='GET', ContentType='application
           return reject('网络错误')
         }
         if (json.code === 1) {
-          return resolve(json.data);
+          return resolve(json.data)
         }else if(json.code === 302){
-          window.location.href=json.data;
+          window.location.href=json.data
         }else{
           info({
             content:json.msg
