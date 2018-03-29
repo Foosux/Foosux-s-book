@@ -346,9 +346,34 @@ var app6 = new Vue({
 
 ### $data
 
+返回当前组件当前的 data
+
 ### $el
 
+返回当前组件的 dom 节点
+
 ### $watch
+
+观察一个值的变化，观察的这个值一变化的话，那么就执行function里面的语句
+
+```js
+var vm = new Vue({
+   el: '#watch',
+   data: {
+      firstName: 'a',
+      lastName: 'fei',
+      fullName: 'a fei'
+    },
+    watch: {
+      firstName: function (val) {
+        this.fullName = val + ' ' + this.lastName
+      },
+      lastName: function (val) {
+        this.fullName = this.firstName + ' ' + val
+      }
+    }
+  })
+```
 
 ### $set
 
@@ -367,6 +392,22 @@ vm.$set(vm.xx, 'age', 27)
 ### $emit(eventName)
 
 为实例触发事件
+
+### $root
+
+子组件访问根组件，如果当前实例没有父实例，此实例将会是其自已。
+
+### $parent
+
+父链，子组件访问父组件使用。
+
+### $children
+
+子索引，返回所有子组件的实例，是一个数组。
+
+### $ref
+
+有时候组件过多的话，就很记清各个组件的顺序与位置，所以通过给子组件一个索引ID，可以访问单个子组件。
 
 ## 3 修饰符
 

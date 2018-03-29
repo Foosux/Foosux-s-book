@@ -47,6 +47,8 @@
           * [模板语法](./FE/VUE/base/模板语法.md)
           * [监听事件](./FE/VUE/base/监听事件.md)
           * [组件](./FE/VUE/base/组件.md)
+          * [组件通讯bus](./FE/VUE/base/组件通讯bus.md)
+          * [组件通讯vuex](./FE/VUE/base/组件通讯vuex.md)
           * [常用Api概览](./FE/VUE/base/常用Api概览.md)
           * [生命周期](./FE/VUE/base/生命周期.md)
           * [表单处理](./FE/VUE/base/表单处理.md)
