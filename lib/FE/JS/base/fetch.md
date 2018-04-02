@@ -87,9 +87,9 @@ fetch('/test/content.json').then(function(data){
 })
 ```
 
-### 请求状态
+###
 
-#### bnodyUsed
+#### bodyUsed
 
 - 标记返回值是否被使用过
 - 这样设计的目的是为了之后兼容基于流的API，让应用一次消费data，这样就允许了JavaScript处理大文件例如视频，并且可以支持实时压缩和编辑。
