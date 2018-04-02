@@ -122,7 +122,7 @@ this.$router.push({
 
 params一旦设置在路由，params就是路由的一部分，如果这个路由有params传参，但是在跳转的时候没有传这个参数，会导致跳转失败或者页面会没有内容。
 
-```vue
+```js
 <router-link :to="{ name:'router1',params: { id: status}}" >正确</router-link>
 <router-link :to="{ name:'router1',params: { id2: status}}">错误</router-link>
 ```

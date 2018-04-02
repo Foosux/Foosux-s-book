@@ -87,7 +87,7 @@ var vm = new Vue({
 
 > `.vue文件` 是用户用 HTML-like 的语法编写的 Vue 组件。
 
-```vue
+```js
 <template>
   <div id="app">
     <my-header :transparent="isTransparent"></my-header>

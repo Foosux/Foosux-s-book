@@ -1,24 +1,38 @@
 # 前后端数据交互
 
-> 目前前后端的通信主要通过`HTTP协议`来完成，过程中提交数据的格式有哪些？又会碰到哪些问题？
+> 目前前后端的通信主要通过`HTTP协议`来完成，此篇总结了前端请求数据的各种形式。
 
 <!-- toc -->
 
-## 前端视角
+## 常见方式
 
-### 常见方式
+在前端开发中，常见的获取数据、资源的方式如下：
 
-#### Get-数据放在URL中
+- 非Ajax请求
+  - Get-url（包含直接的url请求、各类资源标签src）
+  - 原生表单提交
+- Ajax请求
+  - 原生ajax
+  - 各类ajax库
+  - fetch
+
+在请求形式上又各有差别，具体如下：
+
+### Get-url
 
 在URL`?`后增加参数，以键值对的形式分割。
 
 ```js
-http://foosux.com?wd=test&ucid=100091
+http://foosux.com/api/test?wd=test&ucid=100091
+
+<img src="http://foosux.com/xx.png" />
+<link src="http://foosux.com/css/index.css" />
+<script src="http://foosux.com/js/index.js"></script>
 ```
 
-#### Post-不同的编码方案
+### Post-不同的编码方案
 
-- `application/x-www-form-urlencoded`
+#### `application/x-www-form-urlencoded`
 
 ```js
 // 请求头
@@ -50,7 +64,7 @@ import qs from 'qs'
 > 对前端也不算友好(没有现成的解析、拼装方法)。      
 > value要进行编码，编码之后的对调试者不友好。   
 
-- `multipart/form-data`
+#### `multipart/form-data`
 
 ```js
 // 请求头
@@ -72,7 +86,7 @@ Content-Disposition: form-data; name="text"
 
 > 随着越来越多的 Web 站点，尤其是 WebApp，全部使用 Ajax 进行数据交互之后，我们完全可以定义新的数据提交方式，给开发带来更多便利。
 
-- `application/json`
+#### `application/json`
 
 ```js
 // 请求首部中的字段设置
@@ -87,7 +101,7 @@ Content-Disposition: form-data; name="text"
 
 > Google的AngularJS中的Ajax功能，默认就是提交JSON字符串。
 
-- `text/xml`
+#### `text/xml`
 
 ```xml
 <!-- 请求头 -->
@@ -105,15 +119,9 @@ Content-Disposition: form-data; name="text"
 ```
 `XML-RPC协议`是一种使用`HTTP`作为传输协议，`XML`作为编码方式的远程调用规范。它简单、功能够用，各种语言的实现都有，如 WordPress 的 XML-RPC Api，搜索引擎的 ping 服务等等。
 
-### 不同技术方案中的AJAX请求
+## 发送Ajax请求
 
-- VUE
-  - axios
-  - vue-resource
-- React
-  - fetch polyfill
-
-## Form表单交互
-
-- headers
-  - 'X-Requested-With': 'XMLHttpRequest'
+- `原生Ajax` [详细介绍](/FE/JS/base/ajax.html)）
+- `Jquery.Ajax`
+- 各类Ajax库，如：`axios`
+- `fetch polyfill`（[详细介绍](/FE/JS/base/fetch.html)）

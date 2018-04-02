@@ -12,7 +12,7 @@
 
 > 双括号的数据绑定形式不能作用于属性，所以有了 v-bind
 
-```vue
+```js
 <div id="app">
   <span v-bind:title="message">
     鼠标悬停几秒钟查看此处动态绑定的提示信息！
@@ -43,7 +43,7 @@ var app = new Vue({
 
 `对象语法`
 
-```vue
+```js
 <div
   class="static"
   :class="{ 'active': isActive, 'text-danger': hasError }">
@@ -58,7 +58,7 @@ var app = new Vue({
 
 `数组语法`
 
-```vue
+```js
 <div :class="[activeClass, errorClass]"></div>
 
 <div :class="[isActive ? activeClass : '', errorClass]"></div>
@@ -79,7 +79,7 @@ data: {
 
 - 如果逻辑进一步复杂，建议使用计算值：
 
-```vue
+```js
 <div :class="classObject"></div>
 ```
 
@@ -115,7 +115,7 @@ todo: {
 
 > 通常使用`:style`时，Vue.js 会自动侦测并添加相应的前缀
 
-```vue
+```js
 <div :style="{ display: ['-webkit-box', '-ms-flexbox', 'flex'] }"></div>
 ```
 
@@ -123,7 +123,7 @@ todo: {
 
 - 数据绑定DOM，控制显示隐藏
 
-```vue
+```js
 <div id="app-3">
   <p v-if="seen">现在你看到我了</p>
 </div>
@@ -140,7 +140,7 @@ var app3 = new Vue({
 
 - 在 <template> 元素上使用 v-if 条件渲染分组
 
-```vue
+```js
 <template v-if="ok">
   <h1>Title</h1>
   <p>Paragraph 1</p>
@@ -154,7 +154,7 @@ var app3 = new Vue({
 
 通常和 v-if 搭配使用
 
-```vue
+```js
 <h1 v-if="ok">Yes</h1>
 <h1 v-else>No</h1>
 ```
@@ -163,7 +163,7 @@ var app3 = new Vue({
 
 > 2.10 新增
 
-```vue
+```js
 <div v-if="type === 'A'">
   A
 </div>
@@ -182,7 +182,7 @@ var app3 = new Vue({
 
 用于根据条件展示元素，用法大致一样
 
-```vue
+```js
 <h1 v-show="ok">Hello!</h1>
 ```
 
@@ -197,7 +197,7 @@ var app3 = new Vue({
 
 - 实例: 使用数组数据
 
-```vue
+```js
 <div id="app-4">
   <ol>
     <!-- 亦可用 of 代替 in -->
@@ -228,7 +228,7 @@ var app4 = new Vue({
 
 - 另一个实例：使用单个对象作为数据
 
-```vue
+```js
 <li v-for="value in object">
   {{ value }}
 </li>
@@ -259,7 +259,7 @@ var app = new Vue({
 
 - 一段取值范围
 
-```vue
+```js
 <span v-for="n in 10">{{ n }}</span>
 ```
 
@@ -273,7 +273,7 @@ var app = new Vue({
 
 用来为用户交互绑定事件
 
-```vue
+```js
 <div id="app-5">
   <p>{{ message }}</p>
   <button v-on:click="reverseMessage">逆转消息</button>
@@ -296,7 +296,7 @@ var app5 = new Vue({
 
 > v-on经常使用，缩写形式：
 
-```vue
+```js
 <button @click="reverseMessage">逆转消息</button>
 ```
 
@@ -304,7 +304,7 @@ var app5 = new Vue({
 
 实现表单输入和应用状态之间的双向绑定。
 
-```vue
+```js
 <div id="app-6">
   <p>{{ message }}</p>
   <input v-model="message">
@@ -324,7 +324,7 @@ var app6 = new Vue({
 
 执行一次性地插值，当数据改变时，插值处的内容不会更新，会影响到该节点上所有的数据绑定：
 
-```vue
+```js
 <span v-once>这个将不会改变：{{ msg }}</span>
 ```
 
@@ -332,7 +332,7 @@ var app6 = new Vue({
 
 用于渲染HTML片段。
 
-```vue
+```js
 <!-- 转化为普通文本 -->
 <span>{{ rawHtml }}</span>
 
@@ -379,7 +379,7 @@ var vm = new Vue({
 
 全局 `Vue.set` 的别名，作用一致
 
-```vue
+```js
 Vue.set(vm.xx, 'age', 27)
 
 vm.$set(vm.xx, 'age', 27)
@@ -417,6 +417,6 @@ vm.$set(vm.xx, 'age', 27)
 
 触发的事件调用 `event.preventDefault()`
 
-```vue
+```js
 <form v-on:submit.prevent="onSubmit">...</form>
 ```

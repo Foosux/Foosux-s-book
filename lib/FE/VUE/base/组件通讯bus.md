@@ -32,7 +32,7 @@ export default new Vue
 
 - 添加一个触发 `$emit` 的事件按钮
 
-```vue
+```js
 <template>
   <div id="emit">
       <button @click="bus">按钮</button>
@@ -59,7 +59,7 @@ export default {
 
 - 在另一个组件中使用 `$on` 监听 Bus 发出的事件
 
-```vue
+```js
 <template>
   <div id="on">
     <p>{{ message }}</p>
