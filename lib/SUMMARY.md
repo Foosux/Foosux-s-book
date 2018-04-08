@@ -27,6 +27,7 @@
     * [数据交互](./FE/data/README.md)
         * [axios封装](./FE/data/axios封装.md)
         * [fetch封装](./FE/data/fetch封装.md)
+        * [httpProxy](./FE/data/httpProxy.md)
     * [Node](./FE/NODE/README.md)
         * [基础](./FE/NODE/base/README.md)
             * [npm常用指令](./FE/NODE/base/npm.md)

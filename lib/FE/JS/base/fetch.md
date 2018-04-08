@@ -87,8 +87,6 @@ fetch('/test/content.json').then(function(data){
 })
 ```
 
-###
-
 #### bodyUsed
 
 - 标记返回值是否被使用过
