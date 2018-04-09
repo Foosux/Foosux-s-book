@@ -10,7 +10,7 @@ fn.call(this, arg1, arg2)
 fn.call(this, [arg1, arg2])
 
 // bind 语法
-fn.bind(this, arg1, arg2)
+fn.bind(this, arg1, arg2)()
 ```
 
 > `call` 和 `apply` 实现的功能是相同的，只是传参的方式不同。他们可以显式的指定`this`（普通函数调用是隐式传入 this）
