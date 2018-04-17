@@ -80,6 +80,8 @@
         * [思考](./FE/AG/think/README.md)
         * [问题集](./FE/AG/error/README.md)
     * [微信小程序](./FE/XCX/README.md)
+    * [前端模板引擎](./FE/template/README.md)
+        * [pug](./FE/template/pug.md)
     * [工程化实践](./FE/project/README.md)
         * [基础](./FE/project/base/README.md)
         * [方案](./FE/project/plan/README.md)

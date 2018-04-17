@@ -269,6 +269,11 @@ yarn是一个与npm兼容的node包管理器，使用它安装npm包，会自动
 
 ## package.json
 
+```js
+// 生成package.json
+npm init
+npm init --yes
+```
 在我们讨论过程中涉及了 `package.json` 的部分字段，详细介绍可参考另一篇文章。
 
 ## package-lock.json
