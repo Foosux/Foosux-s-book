@@ -22,7 +22,7 @@
 | | 本地保存 | `command`+`s` |
 | | 另存为 | `command`+`shift`+`s` |
 | 切换/跳转 | 切换顶部Tab | `option`+`command`+`左右方向键` |
-| | 显示隐藏tree | 组合使用： `command`+`k` & `command`+`b` |
+| | 显示隐藏tree | `command`+`|` <br/> 组合使用： `command`+`k` & `command`+`b`
 | | 文本Type切换 | `control`+`shift`+`l` | 识别文本类型、高亮、补全 |
 | | 标签首尾跳转 | `control`+`m` | 适用于`[]`、`()`、`{}`、`html` 等 |
 | | 标签内元素选中 | `control`+`command`+`m` | 编辑HTML标签时很有用,可对`vim`操作进行补充 |
@@ -37,3 +37,4 @@
 | | 设置面板 | `command`+`,` |
 | 命令 | 指令面板 | `shift`+`command`+`p` | 支持模糊搜索 |
 | | git操作 | `command`+`shift`+`h` | 需安装 `git-plus` |
+| 其他 | 注释 | `command`+`/`
