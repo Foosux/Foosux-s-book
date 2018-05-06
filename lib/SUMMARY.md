@@ -105,6 +105,8 @@
         * [gitignore](./COMMON/Git/gitignore.md)
     * [搜索引擎](./COMMON/browser/README.md)
         * [Google使用技巧](./COMMON/browser/Google使用技巧.md)
+    * [工具库](./COMMON/tools/README.md)
+      * [Atom指南](./COMMON/tools/atom.md)
 * [方法论](./mothod/README.md)
 * [读书笔记](./read/README.md)
     * [别让猴子跳回背上](./read/别让猴子跳回背上.md)
