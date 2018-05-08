@@ -20,6 +20,17 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | b
 $ brew install nvm
 ```
 
+> 安装完成后，需按照提示增加配置使命令生效
+
+```js
+// 根据使用的sell增加配置，如 使用zsh 则在 .zshrc 中增加：
+export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"
+
+// 执行source命令使之生效
+source ~/.zshrc
+```
+
 ## 管理node版本
 
 ### 1 查看已有版本
