@@ -89,7 +89,7 @@ Fetch('/data/business/createInfo?businessId=123').then( data =>{ })
 
 // post
 Fetch('/data/business/createInfo', {
-  mothod: 'post',
+  method: 'post',
   params: {
     businessId: 123
   }
