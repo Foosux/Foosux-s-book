@@ -204,6 +204,13 @@ npm login
 
 // 查看登陆信息
 npm whoami
+
+// 查看包拥有者
+npm owner ls 模块名
+// 新增包拥有者
+npm owner add 用户名 模块名
+// 删除包用拥有
+npm owner rm 用户名 模块名
 ```
 
 - 编写符合规范的包

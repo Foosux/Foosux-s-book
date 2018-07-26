@@ -18,6 +18,7 @@
           * [跨域](./FE/JS/base/跨域.md)
           * [fetch](./FE/JS/base/fetch.md)
         * [进阶](./FE/JS/up/README.md)
+          * [继承](./FE/JS/up/继承.md)
         * [案例](./FE/JS/plan/README.md)
         * [思考](./FE/JS/think/README.md)
         * [问题集](./FE/JS/error/README.md)
