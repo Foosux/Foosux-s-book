@@ -99,7 +99,7 @@
         * [FE异常处理](./FE/Q_A/FE异常处理.md)
 * [后端技术RD](./RD/README.md)
 * [系统运维OP](./OP/README.md)
-    * [Linux]
+    * Linux
         * [Linux简介](./OP/Linux/简介.md)
         * [启动过程](./OP/Linux/启动过程.md)
         * [目录结构](./OP/Linux/目录结构.md)
