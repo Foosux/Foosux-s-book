@@ -99,8 +99,7 @@
         * [FE异常处理](./FE/Q_A/FE异常处理.md)
 * [后端技术RD](./RD/README.md)
 * [系统运维OP](./OP/README.md)
-    * Linux
-        * [Linux简介](./OP/Linux/简介.md)
+    * [Linux](./OP/Linux/README.md)
         * [启动过程](./OP/Linux/启动过程.md)
         * [目录结构](./OP/Linux/目录结构.md)
         * [文件基本属性](./OP/Linux/文件基本属性.md)
@@ -111,6 +110,7 @@
         * [包管理工具](./OP/Linux/包管理工具.md)
         * [进程管理](./OP/Linux/进程管理.md)
         * [其他常用指令](./OP/Linux/其他常用指令.md)
+        * [常用快捷键](./OP/Linux/常用快捷键.md)
     * [基础](./OP/base/README.md)
         * [环境变量](./OP/base/环境变量.md)
         * [Linux常用指令](./OP/base/Linux常用指令.md)
