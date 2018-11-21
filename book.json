@@ -6,6 +6,9 @@
   "styles": {
     "website": "styles/website.css"
   },
+  "theme-default": {
+    "showLevel": true
+  },
   "plugins": [
     "-sharing",
     "expandable-chapters-small",

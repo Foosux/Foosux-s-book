@@ -22,7 +22,7 @@
   "scripts": {
     "start": "gitbook serve --port 5858",
     "build": "gitbook build",
-    "public": "sh public.sh",
+    "public": "sh publish.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
