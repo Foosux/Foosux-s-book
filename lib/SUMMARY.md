@@ -121,7 +121,7 @@
         * [函数](./OP/Shell/函数.md)
         * [文件包含](./OP/Shell/文件包含.md)
         * [输入输出重定向](./OP/Shell/输入输出重定向.md)
-        * [echo命名](./OP/Shell/echo命名.md)
+        * [echo命令](./OP/Shell/echo命令.md)
         * [printf命令](./OP/Shell/printf命令.md)
         * [test命令](./OP/Shell/test命令.md)
         * [日期处理](./OP/Shell/日期处理.md)
