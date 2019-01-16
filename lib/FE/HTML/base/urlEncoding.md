@@ -71,6 +71,7 @@ foo://example.com:8042/over/there?name=ferret#nose
 - escape（69个）（已经被W3C废弃）：*/@+-._0-9a-zA-Z
 - encodeURI（82个）：!#$&'()*+,/:;=?@-._~0-9a-zA-Z
 - encodeURIComponent（71个）：!'()*-._~0-9a-zA-Z
+
 ### encodeURI & decodeURI
 
 它会将`元字符`和`语义字符`之外的字符，都进行转义，通常用来处理整个URL。
