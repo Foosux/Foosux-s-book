@@ -2,6 +2,8 @@
 
 * [About me](README.md)
 * [前端技术FE](./FE/README.md)
+    * 技术点
+        * [性能优化](./FE/point/性能优化.md)
     * [JavaScript](./FE/JS/README.md)
         * [基础](./FE/JS/base/README.md)
           * [undefined_null](./FE/JS/base/undefined_null.md)

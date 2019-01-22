@@ -3,7 +3,7 @@
 
 在编写 redux 这部分代码的时候需要频繁在 actions 、 constants 、 reducers 这几个目录间切换。
 
-dva简化了redux的使用（只需要一个`model`就可以完成所有操作），并且在封装了 redux-saga 和 react-router，同时还可以包含`dva-loading插件`获取 loading 状态等。
+dva简化了redux的使用（只需要一个`model`就可以完成所有操作），并且在封装了 `redux-saga` 和 `react-router`，同时还可以包含`dva-loading插件`获取 loading 状态等。
 
 ## app
 
