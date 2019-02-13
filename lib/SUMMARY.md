@@ -55,6 +55,7 @@
         * [基础](./FE/NODE/base/README.md)
             * [npm常用指令](./FE/NODE/base/npm.md)
             * [nvm常用指令](./FE/NODE/base/nvm.md)
+            * [文件路径](./FE/NODE/base/文件路径.md)
         * [进阶](./FE/NODE/up/README.md)
             * [exports VS module.exports](./FE/NODE/up/比较两种导出.md)
         * [案例](./FE/NODE/plan/README.md)
