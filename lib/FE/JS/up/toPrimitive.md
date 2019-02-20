@@ -22,7 +22,7 @@
 
 > `null`、`undefined`和`Object.create()`的对象没有这两个方法。
 
-## [[DefaultValue]](hint)内部操作
+## `[[DefaultValue]](hint)`内部操作
 
 ![](https://ws2.sinaimg.cn/large/006tKfTcly1g0arh51l60j30k50gg75k.jpg)
 
@@ -31,6 +31,10 @@
 ![](https://ws3.sinaimg.cn/large/006tKfTcly1g0ar66897lj30wg0tottn.jpg)
 
 > 具体可参考 [ES5 规范 8.12.8 节](https://www.ecma-international.org/ecma-262/5.1/#sec-8.12.8)
+
+简单来说 ：
+
+> toPrimitive(obj)等价于:先计算obj.valueOf(),如果结果为原始值,则返回此结果;否则.计算obj.toString(),如果结果是原始值,则返回此结果;否则,抛出异常
 
 ## valueOf
 
@@ -82,8 +86,10 @@ true.toString()     // 'true'
 
 // 隐式转换，调用 `toPrimitive`，hint 为 string
 `${[1,2,3]}`  // '1,2,3'  [].toString
+new Date
 // 隐式转换，调用 `toPrimitive`，hint 为 number
 [1,2,3]+''    // '1,2,3'  [].valueOf().toString()
++new Date 
 ```
 
 > 除隐式类型转换外，`toString`也常用来精准地判断值类型，具体可参考 [JS中的自省](./自省.md)
