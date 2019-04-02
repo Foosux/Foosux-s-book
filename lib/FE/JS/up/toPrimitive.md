@@ -89,7 +89,7 @@ true.toString()     // 'true'
 new Date
 // 隐式转换，调用 `toPrimitive`，hint 为 number
 [1,2,3]+''    // '1,2,3'  [].valueOf().toString()
-+new Date 
++new Date
 ```
 
 > 除隐式类型转换外，`toString`也常用来精准地判断值类型，具体可参考 [JS中的自省](./自省.md)
