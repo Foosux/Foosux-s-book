@@ -21,3 +21,7 @@ XMLHttpRequest对象，传统的Ajax实现的关键。
 
 ## FRP
 Functional Reactive Programming，函数响应式编程。
+
+## IDC
+
+互联网数据中心（Internet Data Center）简称IDC，就是电信部门利用已有的互联网通信线路、带宽资源，建立标准化的电信专业级机房环境，为企业、政府提供服务器托管、租用以及相关增值等方面的全方位服务。
